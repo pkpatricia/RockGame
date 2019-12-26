@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Let's Play Rock, Paper, Scissors!</h1>
+
+  <label for="my-select">User Choice:</label>
+  <select id="my-select" onchange="optionChanged(this.value)">
+    <option value="">--Please choose an option--</option>
+    <option value="scissors">SCISSORS</option>
+    <option value="rock">ROCK</option>
+    <option value="paper">PAPER</option>
+  </select>
+
+  <h2>
+    <ul>The possible outcomes are:</ul>
+  </h2>
+
+  <li>Rock destroys scissors.</li>
+  <li>Scissors cut paper.</li>
+  <li>Paper covers rock.</li>
+  <li>If there’s a tie, then the game ends in a draw.</li>
+
+</body>
+<script src="rock.js"></script>
+
+</html>
