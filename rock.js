@@ -1,5 +1,5 @@
 let computerChoiceString = '';
-let winner = 'User Won';
+let winner = 'The User Won.';
 
 function getComputerChoice() {
   let computerChoice = Math.floor((Math.random() * 3));
@@ -34,17 +34,17 @@ let getUserChoice = input => {
 function determineWinner(userChoice, computerChoiceString) {
   if (getUserChoice === 'rock') {
     if (computerChoiceString === 'paper') {
-      winner = 'Computer Won';
+      winner = 'The Computer Won.';
     }
   }
   if (getUserChoice === 'paper') {
     if (computerChoiceString === 'scissors') {
-      winner = 'Computer Won';
+      winner = 'The Computer Won.';
     }
   }
   if (getUserChoice === 'scissors') {
     if (computerChoiceString === 'rock') {
-      winner = 'Computer Won';
+      winner = 'The Computer Won.';
     }
   }
 
@@ -53,6 +53,7 @@ function determineWinner(userChoice, computerChoiceString) {
 
 
   console.log(winner);
+  alert(winner);
   return winner;
 }
 
